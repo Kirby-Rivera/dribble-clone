@@ -1,6 +1,21 @@
 import GalleryItem from "./GalleryItem";
+import { useRef } from "react";
 
 const GalleryNav = () => {
+  const scrollContainerRef = useRef(null);
+
+//   const scrollLeft = () => {
+//     if (scrollContainerRef.current) {
+//       scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+//     }
+//   };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="gallery-main">
       <button className="gallery-main-title">
@@ -21,18 +36,23 @@ const GalleryNav = () => {
           <path d="m6 9 6 6 6-6" />
         </svg>
       </button>
-      <div className="gallery-main-items">
+      <div className="gallery-main-items" ref={scrollContainerRef}>
+        {/* <button className="gallery-main-items-btn" onClick={scrollLeft}>
+          left
+        </button> */}
         <GalleryItem title={"Discover"} />
-        <GalleryItem title={"Animation"} />
         <GalleryItem title={"Branding"} />
         <GalleryItem title={"Illustration"} />
         <GalleryItem title={"Mobile"} />
         <GalleryItem title={"Print"} />
         <GalleryItem title={"Product Design"} />
         <GalleryItem title={"Typography"} />
+        <GalleryItem title={"Animation"} />
         <GalleryItem title={"Web Design"} />
+        <button className="gallery-main-items-btn" nClick={scrollRight}>
+          right
+        </button>
       </div>
-
       <button className="gallery-main-filter">
         Filter
         <svg

@@ -27,6 +27,10 @@
       font-weight: 600;
       font-size: 14px;
     }
+
+    &-btn {
+      display: none;
+    }
   }
 
   &-filter {
@@ -51,11 +55,25 @@
       &::-webkit-scrollbar {
         display: none;
       }
+
+      &-btn {
+        display: block;
+        position: fixed;
+      }
     }
 
     &-item {
       font-weight: 600;
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    position: relative;
+    &-items {
+      width: 100%;
+      position: absolute;
+      top: 80px;
     }
   }
 }
