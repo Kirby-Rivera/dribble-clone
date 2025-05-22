@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroSearchBar = ({ placeholder }) => {
   return (
     <div className="hero-search">
