@@ -4,11 +4,11 @@ import { useRef } from "react";
 const GalleryNav = () => {
   const scrollContainerRef = useRef(null);
 
-//   const scrollLeft = () => {
-//     if (scrollContainerRef.current) {
-//       scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
-//     }
-//   };
+  //   const scrollLeft = () => {
+  //     if (scrollContainerRef.current) {
+  //       scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+  //     }
+  //   };
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
@@ -49,7 +49,7 @@ const GalleryNav = () => {
         <GalleryItem title={"Typography"} />
         <GalleryItem title={"Animation"} />
         <GalleryItem title={"Web Design"} />
-        <button className="gallery-main-items-btn" nClick={scrollRight}>
+        <button className="gallery-main-items-btn" onClick={scrollRight}>
           right
         </button>
       </div>
