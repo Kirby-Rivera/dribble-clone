@@ -1,0 +1,114 @@
+// Variables for reuse
+$padding-side: 40px;
+$btn-padding: 12px 23px;
+$btn-radius: 21px;
+$font-size-sm: 14px;
+$font-weight-bold: 700;
+$color-black: black;
+$color-white: white;
+
+// Navigation Main
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding-side;
+
+  @media (max-width: 1204px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0px;
+  }
+}
+
+// Navigation Auth
+.nav-auth {
+  display: flex;
+
+  &-btn {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: $btn-padding;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+  }
+
+  &-login-btn {
+    background: $color-black;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: $btn-padding;
+    border-radius: $btn-radius;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+  }
+
+  @media (max-width: 480px) {
+    &-btn {
+      display: none;
+    }
+
+    &-login-btn {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Navigation Items
+.main {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  align-items: center;
+
+  &-item {
+    list-style: none;
+    display: flex;
+  }
+
+  &-dd-md {
+    display: none;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    font-size: $font-size-sm;
+    font-weight: 600;
+
+    &-show {
+      display: inline-block;
+      margin-left: 3px;
+    }
+
+    &-hide {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1204px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 10px;
+
+    &-item {
+      display: none;
+    }
+
+    &-dd-md {
+      display: inline-block;
+      background: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      margin-right: 10px;
+    }
+  }
+}
