@@ -13,7 +13,7 @@ const GalleryNav = () => {
       if (container) {
         setHideLeftArrow(container.scrollLeft === 0);
         setHideRightArrow(
-          container.scrollLeft + container.clientWidth >= container.scrollWidth
+          container.scrollLeft + container.clientWidth   >= container.scrollWidth - 10
         );
       }
     };
@@ -24,13 +24,13 @@ const GalleryNav = () => {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+      scrollContainerRef.current.scrollBy({ left: -250, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
+      scrollContainerRef.current.scrollBy({ left: 250, behavior: "smooth" });
     }
   };
 
