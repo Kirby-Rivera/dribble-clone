@@ -2,6 +2,7 @@ import "./App.scss";
 import Nav from "./views/Nav";
 import Hero from "./views/Hero";
 import Gallery from "./views/Gallery";
+import Carousel from "./views/Carousel";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <Hero />
       <Gallery />
+      {/* <Carousel /> */}
     </>
   );
 }

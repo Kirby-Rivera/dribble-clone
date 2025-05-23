@@ -13,6 +13,26 @@ $color-white: white;
   align-items: center;
   justify-content: space-between;
   padding: 0 $padding-side;
+  background-color: white;
+  z-index: 50;
+
+  @media (max-width: 1204px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0px;
+  }
+}
+
+.nav-scrolled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding-side;
+  position: sticky;
+  top: 0;
+  background-color: white;
 
   @media (max-width: 1204px) {
     padding: 0 20px;

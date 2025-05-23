@@ -4,7 +4,7 @@ import '../components/gallery/gallery.scss'
 
 const Gallery = () => {
   return (
-    <section>
+    <section className="gallery">
       <GalleryNav />
       <GalleryMain />
     </section>

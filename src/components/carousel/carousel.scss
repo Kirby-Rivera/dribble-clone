@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes spin-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-cont {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  gap: 25px;
+}
+
+.carousel-item {
+  width: 204px;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  animation: spin-scroll 6s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 15px;
+  }
+}

@@ -1,6 +1,6 @@
-const HeroSearchBar = ({ placeholder }) => {
+const HeroSearchBar = ({ placeholder, isScrolled }) => {
   return (
-    <div className="hero-search">
+    <div className={isScrolled ? "hero-search-scrolled" : "hero-search"}>
       <input className="hero-search-input" type="text" placeholder={placeholder}/>
       <span className="hero-search-dropdown">
         Shots{" "}

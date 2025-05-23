@@ -1,7 +1,8 @@
 import Item from "./Item";
 import "./nav.scss";
+import HeroSearchBar from "../hero/HeroSearchBar";
 
-const NavItems = () => {
+const NavItems = ({ isScrolled }) => {
   return (
     <div className="main">
       <svg
@@ -19,6 +20,7 @@ const NavItems = () => {
           fill="currentColor"
         ></path>
       </svg>
+      {isScrolled && <HeroSearchBar isScrolled={isScrolled} placeholder={"What are you looking for?"}/>}
       <ul className="main-item">
         <Item title={"Explore"} isDropdown={true} />
         <Item title={"Hire a Designer"} isDropdown={true} />
