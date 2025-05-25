@@ -3,6 +3,7 @@ import Nav from "./views/Nav";
 import Hero from "./views/Hero";
 import Gallery from "./views/Gallery";
 import Carousel from "./views/Carousel";
+import Footer from './views/Footer'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Nav />
       <Hero />
       <Gallery />
-      {/* <Carousel /> */}
+      <Carousel />
+      <Footer />
     </>
   );
 }

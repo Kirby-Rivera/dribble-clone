@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-upper {
+        display: flex;
+        gap: 80px;
+        padding: 74px 0 44px 0;
+          align-items: center;
+
+        .links {
+            display: flex;
+            gap: 45px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        .socials{
+            display: flex;
+            height: 18px;
+            gap: 16px;
+        }
+    }
+
+}
+

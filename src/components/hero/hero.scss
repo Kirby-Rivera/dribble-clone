@@ -173,7 +173,7 @@ section {
 
   @media (max-width: 480px) {
     width: 100%;
-
+    display: none;
     &-dropdown {
       font-size: 14px;
     }

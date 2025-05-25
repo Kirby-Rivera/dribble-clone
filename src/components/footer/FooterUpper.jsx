@@ -1,14 +1,12 @@
-import Item from "./Item";
-import "./nav.scss";
-import HeroSearchBar from "../hero/HeroSearchBar";
+import FooterLinks from "./FooterLinks";
 
-const NavItems = ({ isScrolled }) => {
+const FooterUpper = () => {
   return (
-    <div className="main">
+    <div className="footer-upper">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="89"
-        height="25"
+        width="104"
+        height="30"
         viewBox="0 0 210 59"
         fill="black"
         className="main-svg"
@@ -20,37 +18,24 @@ const NavItems = ({ isScrolled }) => {
           fill="currentColor"
         ></path>
       </svg>
-      {isScrolled && (
-        <HeroSearchBar
-          isScrolled={isScrolled}
-          placeholder={"What are you looking for?"}
-        />
-      )}
-      <ul className="main-item">
-        <Item title={"Explore"} isDropdown={true} />
-        <Item title={"Hire a Designer"} isDropdown={true} />
-        <Item title={"Find Jobs"} />
-        <Item title={"Blog"} />
-      </ul>
-      <button className="main-dd-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M4 12h16" />
-          <path d="M4 18h16" />
-          <path d="M4 6h16" />
-        </svg>
-      </button>
+      <div className="links">
+        <FooterLinks title={"For designers"} />
+        <FooterLinks title={"Hire talent"} />
+        <FooterLinks title={"Inspiration"} />
+        <FooterLinks title={"Advertisng"} />
+        <FooterLinks title={"Blog"} />
+        <FooterLinks title={"About"} />
+        <FooterLinks title={"Careers"} />
+        <FooterLinks title={"Support"} />
+      </div>
+      <div className="socials">
+        <img className="social" src="assets/twitter.svg" alt="test" />
+        <img className="social"  src="assets/fb.svg" alt="" />
+        <img className="social"  src="assets/ig.svg" alt="" />
+        <img className="social"  src="assets/pinterest.svg" alt="" />
+      </div>
     </div>
   );
 };
 
-export default NavItems;
+export default FooterUpper;

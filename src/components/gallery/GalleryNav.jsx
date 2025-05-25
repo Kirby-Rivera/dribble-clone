@@ -56,12 +56,12 @@ const GalleryNav = () => {
       <div className="gallery-main-navs">
         {!hideLeftArrow && (
           <button className="gallery-main-navs-btn-right" onClick={scrollLeft}>
-            <img src="/chevron-left.svg" alt="" />
+            <img src="assets/chevron-left.svg" alt="" />
           </button>
         )}
         {!hideRightArrow && (
           <button className="gallery-main-navs-btn-left" onClick={scrollRight}>
-            <img src="/chevron-right.svg" alt="" />
+            <img src="assets/chevron-right.svg" alt="" />
           </button>
         )}
       </div>

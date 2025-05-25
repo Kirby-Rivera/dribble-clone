@@ -20,7 +20,7 @@ const HeroSearchBar = ({ placeholder, isScrolled }) => {
         </svg>
       </span>
       <button className="hero-search-btn">
-        <img className="icon" src="/asset 101.svg" alt="search icon" />
+        <img className="icon" src="assets/asset 101.svg" alt="search icon" />
       </button>
     </div>
   );

@@ -11,9 +11,9 @@ const GalleryCards = ({ image, pfp, user, tag, heartTitle, viewTitle }) => {
           <span>{tag}</span>
         </div>
         <div className="gal-card-stats">
-          <img src="/heart.svg" alt="" />
+          <img src="assets/heart.svg" alt="" />
           <p className="hearts">{heartTitle}</p>
-          <img src="/eye.svg" alt="" />
+          <img src="assets/eye.svg" alt="" />
           <p className="views">{viewTitle}</p>
         </div>
       </div>
