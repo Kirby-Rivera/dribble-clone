@@ -171,16 +171,8 @@ section {
     }
   }
 
-  @media (max-width: 480px) {
-    width: 100%;
-
-    &-dropdown {
-      font-size: 14px;
-    }
-
-    &-input {
-      font-size: 14px;
-    }
+ @media (max-width: 820px) {
+    display: none;
   }
 }
 

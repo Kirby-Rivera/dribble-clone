@@ -13,7 +13,7 @@ const GalleryNav = () => {
       if (container) {
         setHideLeftArrow(container.scrollLeft === 0);
         setHideRightArrow(
-          container.scrollLeft + container.clientWidth   >= container.scrollWidth - 10
+          container.scrollLeft + container.clientWidth >= container.scrollWidth - 10
         );
       }
     };
