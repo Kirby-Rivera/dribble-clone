@@ -1,13 +1,18 @@
-import './nav.scss'
-import Button from './Button'
+import "./nav.scss";
+import Button from "./Button";
 
-const NavAuth = () => {
+const NavAuth = ({ isScrolled }) => {
   return (
     <div className="nav-auth">
-      <Button title={"Sign up"}/>
-      <Button title={"Log in"} isLogInBtn={true}/>
+      <img
+        className={isScrolled ? "hide" : "show"}
+        src="assets/asset 101.svg"
+        alt="search icon"
+      />
+      <Button title={"Sign up"} />
+      <Button title={"Log in"} isLogInBtn={true} />
     </div>
-  )
-}
+  );
+};
 
-export default NavAuth
+export default NavAuth;
