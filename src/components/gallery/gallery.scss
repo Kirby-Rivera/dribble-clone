@@ -16,6 +16,7 @@
     border-radius: 8px;
     font-size: 14px;
     background: none;
+    cursor: pointer;
   }
 
   &-navs {
@@ -30,6 +31,7 @@
     &-item {
       font-weight: 600;
       font-size: 14px;
+      cursor: pointer;
     }
   }
 
@@ -44,6 +46,7 @@
     border-radius: 15px;
     font-size: 14px;
     background: none;
+    cursor: pointer;
   }
 
   @media (max-width: 1204px) {
@@ -128,6 +131,7 @@
     height: 259px;
     overflow: hidden;
     border-radius: 12px;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -161,6 +165,7 @@
       display: flex;
       align-items: center;
       gap: 7px;
+      cursor: pointer;
 
       h4 {
         font-size: 14px;
@@ -190,11 +195,11 @@
     .gal-card-stats {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       img {
         width: 17px;
         margin: 0 3px;
-        
       }
 
       p {

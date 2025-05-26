@@ -34,6 +34,7 @@
     animation-delay: calc(
       (30s / var(--quantity)) * (var(--position) - 1) - 30s
     ) !important;
+    cursor: pointer;
 
     img {
       width: 200px;
