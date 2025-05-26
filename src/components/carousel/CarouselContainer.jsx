@@ -8,7 +8,7 @@ const CarouselContainer = () => {
   };
 
   return (
-    <div className="carousel-cont" style={styles}>
+    <div className="carousel-container" style={styles}>
       <div className="carousel-list">
         <CarouselItem position={1} image={"assets/productdesign.gif"} title={"Product Design"} />
         <CarouselItem position={2} image={"assets/animation.webp"} title={"Animation"} />

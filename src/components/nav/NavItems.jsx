@@ -26,6 +26,7 @@ const NavItems = ({ isScrolled }) => {
           placeholder={"What are you looking for?"}
         />
       )}
+
       <ul className="main-item">
         <Item title={"Explore"} isDropdown={true} />
         <Item title={"Hire a Designer"} isDropdown={true} />

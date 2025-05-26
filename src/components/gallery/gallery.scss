@@ -128,7 +128,6 @@
     height: 259px;
     overflow: hidden;
     border-radius: 12px;
-    cursor: pointer;
 
     img {
       width: 100%;
@@ -156,12 +155,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 6px;
+    width: 310px;
 
     .gal-card-user {
       display: flex;
       align-items: center;
       gap: 7px;
-      cursor: pointer;
 
       h4 {
         font-size: 14px;
@@ -191,11 +190,11 @@
     .gal-card-stats {
       display: flex;
       align-items: center;
-      cursor: pointer;
 
       img {
         width: 17px;
         margin: 0 3px;
+        
       }
 
       p {

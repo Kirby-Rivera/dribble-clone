@@ -5,7 +5,7 @@ import "../components/hero/hero.scss";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="hero">
       <HeroHeader />
       <HeroSearchBar placeholder={"What are you looking for?"} />
       <HeroTrending />
