@@ -33,6 +33,7 @@ $color-white: white;
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 40;
 
   @media (max-width: 1204px) {
     padding: 0 20px;
@@ -47,6 +48,10 @@ $color-white: white;
 .nav-auth {
   display: flex;
 
+  img {
+    display: none;
+  }
+
   &-btn {
     background: none;
     border: none;
@@ -55,6 +60,12 @@ $color-white: white;
     padding: $btn-padding;
     font-size: $font-size-sm;
     font-weight: $font-weight-bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(100, 99, 99);
+    }
   }
 
   &-login-btn {
@@ -67,11 +78,29 @@ $color-white: white;
     font-size: $font-size-sm;
     font-weight: $font-weight-bold;
     color: $color-white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(100, 99, 99);
+    }
   }
 
   @media (max-width: 480px) {
     &-btn {
       display: none;
+    }
+
+    img {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      margin: 0 14px;
     }
 
     &-login-btn {
@@ -86,6 +115,11 @@ $color-white: white;
   align-items: center;
   padding: 20px;
   align-items: center;
+
+  .main-svg {
+    margin-right: 40px;
+    cursor: pointer;
+  }
 
   &-item {
     list-style: none;
@@ -102,6 +136,13 @@ $color-white: white;
     padding: 0px 16px;
     font-size: $font-size-sm;
     font-weight: 600;
+    color: black;
+    transition: 0.3 ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(100, 99, 99);
+    }
 
     &-show {
       display: inline-block;

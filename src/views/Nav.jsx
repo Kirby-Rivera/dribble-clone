@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <nav className={scrollY < 400 ? "nav" : "nav-scrolled"}>
       <NavItems isScrolled={scrollY < 100 ? false : true}/>
-      <NavAuth />
+      <NavAuth isScrolled={scrollY < 100 ? true : false} />
     </nav>
   );
 };

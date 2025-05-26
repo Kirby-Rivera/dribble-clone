@@ -1,7 +1,11 @@
 const HeroSearchBar = ({ placeholder, isScrolled }) => {
   return (
     <div className={isScrolled ? "hero-search-scrolled" : "hero-search"}>
-      <input className="hero-search-input" type="text" placeholder={placeholder}/>
+      <input
+        className="hero-search-input"
+        type="text"
+        placeholder={placeholder}
+      />
       <span className="hero-search-dropdown">
         Shots
         <svg
@@ -20,7 +24,7 @@ const HeroSearchBar = ({ placeholder, isScrolled }) => {
         </svg>
       </span>
       <button className="hero-search-btn">
-        <img className="icon" src="/search-icon.svg" alt="search icon" />
+        <img className="icon" src="assets/asset 101.svg" alt="search icon" />
       </button>
     </div>
   );

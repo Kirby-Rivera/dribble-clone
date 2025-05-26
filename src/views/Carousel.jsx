@@ -3,7 +3,7 @@ import CarouselContainer from '../components/carousel/CarouselContainer'
 
 const Carousel = () => {
   return (
-    <section>
+    <section className='carousel'>
         <CarouselContainer />
     </section>
   )

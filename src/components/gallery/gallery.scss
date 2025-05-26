@@ -1,10 +1,6 @@
 //Gallery
 //GalleryNav
 
-.gallery {
-  height: 10000px;
-}
-
 .gallery-main {
   display: flex;
   justify-content: space-between;
@@ -83,6 +79,7 @@
       white-space: nowrap;
       scroll-behavior: smooth;
       padding: 0 40px;
+      z-index: 10;
 
       &::-webkit-scrollbar {
         display: none;
@@ -131,6 +128,7 @@
     height: 259px;
     overflow: hidden;
     border-radius: 12px;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -163,6 +161,7 @@
       display: flex;
       align-items: center;
       gap: 7px;
+      cursor: pointer;
 
       h4 {
         font-size: 14px;
@@ -192,6 +191,7 @@
     .gal-card-stats {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       img {
         width: 17px;
