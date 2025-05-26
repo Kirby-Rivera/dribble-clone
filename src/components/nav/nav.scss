@@ -123,6 +123,11 @@ $color-white: white;
     cursor: pointer;
   }
 
+  .search-logo-section {
+    display: flex;
+    align-items: center;
+  }
+
   &-search-logo {
     display: flex;
     align-items: center;
@@ -165,6 +170,10 @@ $color-white: white;
     display: flex;
     flex-direction: row-reverse;
     padding: 20px 10px;
+
+    .main-svg {
+      margin: 0 10px;
+    }
 
     &-item {
       display: none;
