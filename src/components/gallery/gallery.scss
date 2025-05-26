@@ -1,6 +1,19 @@
 //Gallery
 //GalleryNav
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  gap: 30px;
+  margin: 0 auto;
+
+  @media (max-width: 480px) {
+    padding: 20px 30px;
+  }
+}
+
 .gallery-main {
   display: flex;
   justify-content: space-between;
@@ -78,6 +91,13 @@
     }
 
     &-items {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 82%,
+        rgba(255, 255, 255, 1) 100%
+      );
       overflow-x: auto;
       white-space: nowrap;
       scroll-behavior: smooth;
@@ -219,7 +239,7 @@
   gap: 20px;
   padding: 20px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1462px) {
     grid-template-columns: repeat(3, 1fr); // 3 columns on tablets
   }
 
