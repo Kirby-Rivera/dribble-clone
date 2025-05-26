@@ -143,132 +143,113 @@
       margin-bottom: 50px;
     }
   }
-}
 
-.works {
-  // padding: 40px 70px;
-
-  // @media (max-width: 441px) {
-  //   padding: 40px 10px;
-  // }
-
-  //GalleryCards.jsx
-
-  .gal-card-main {
-    width: 346px;
-
-    &-img-container {
-      width: 100%;
-      height: 259px;
-      overflow: hidden;
-      border-radius: 12px;
-      cursor: pointer;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-      }
-
-      // @media (max-width: 1024px) {
-      //   width: 310px;
-      //   height: 210px;
-      // }
-
-      // @media (max-width: 912px) {
-      //   width: 406px;
-      //   height: 210px;
-      // }
-
-      // @media (max-width: 820px) {
-      //   width: 346px;
-      //   height: 259px;
-      // }
-
-      // @media (max-width: 480px) {
-      //   width: 346px;
-      //   height: 259px;
-      // }
+  @media (max-width: 375px) {
+    &-title{
+      margin-right: 10px;
     }
 
-    &-content-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 6px;
+    &-filter {
+      margin-left: 10px;
+    }
+  }
+}
+
+//Works Section
+
+//GalleryCards.jsx
+
+.gal-card-main {
+  &-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+
+    img {
       width: 100%;
-
-      .gal-card-user {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        cursor: pointer;
-
-        h4 {
-          font-size: 14px;
-        }
-
-        span {
-          font-size: 11px;
-          background-color: rgba($color: #cabdbd, $alpha: 0.8);
-          padding: 2px;
-          font-weight: 600;
-          color: white;
-          border-radius: 2px;
-          transition-duration: 0.7s;
-
-          &:hover {
-            background-color: black;
-          }
-        }
-
-        img {
-          width: 25px;
-          height: 25px;
-          border-radius: 50%;
-        }
-      }
-
-      .gal-card-stats {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-
-        img {
-          width: 17px;
-          margin: 0 3px;
-        }
-
-        p {
-          font-size: 11px;
-        }
-
-        .hearts {
-          margin-right: 8px;
-        }
-      }
+      height: 100%;
+      object-fit: contain;
     }
   }
 
-  //GalleryMain.jsx
+  &-content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    width: 100%;
 
-  .gal-main-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
-    gap: 30px;
-    place-items: center;
-    margin: 50px auto;
-    padding: 0 70px;
+    .gal-card-user {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
 
-    @media (max-width: 1462px) {
-      grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+      h4 {
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 11px;
+        background-color: rgba($color: #cabdbd, $alpha: 0.8);
+        padding: 2px;
+        font-weight: 600;
+        color: white;
+        border-radius: 2px;
+        transition-duration: 0.7s;
+
+        &:hover {
+          background-color: black;
+        }
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
     }
 
-    @media (max-width: 945px) {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
+    .gal-card-stats {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
 
-    @media (max-width: 615px) {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      img {
+        width: 17px;
+        margin: 0 3px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+
+      .hearts {
+        margin-right: 8px;
+      }
     }
+  }
+}
+
+//GalleryMain.jsx
+
+.gal-main-grid {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+  gap: 30px;
+  place-items: center;
+  margin: 50px auto;
+  padding: 0 70px;
+
+  @media (max-width: 862px) {
+    padding: 20px;
+    width: 100vw;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    width: 100vw;
   }
 }

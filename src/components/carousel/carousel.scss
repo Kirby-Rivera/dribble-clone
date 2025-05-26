@@ -1,15 +1,20 @@
+//Carousel.jsx
+
 .carousel {
   padding: 50px 0;
 }
+
+//CarouselContainer.jsx
 
 .carousel-container {
   width: 100%;
   height: var(--height);
   overflow: hidden;
 
+
   @media (max-width: 1204px) {
     overflow-x: scroll;
-    margin: 0 29px;
+    margin: 0 auto;
   }
 
   .carousel-list {
@@ -19,13 +24,17 @@
     position: relative;
 
     @media (max-width: 1204px) {
+      width: 90%;
       white-space: nowrap;
       scroll-behavior: smooth;
       gap: 15px;
     }
   }
 
+  //CarouselItem.jsx
+
   .carousel-item {
+    padding: 0 20px;
     width: var(--width);
     height: var(--height);
     position: absolute;
@@ -59,8 +68,9 @@
 
     @media (max-width: 1204px) {
       animation: none;
-      left: 0px;
+      left: -10px;
       position: relative;
+
     }
   }
 

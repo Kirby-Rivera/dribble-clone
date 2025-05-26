@@ -4,7 +4,7 @@ const GalleryMain = () => {
   return (
     <div className="gal-main-grid">
       <GalleryCards
-        image={"assets/test-img.png"}
+        image={"assets/test-img-1.jpeg"}
         pfp={"assets/pfp.png"}
         user={"John Doe"}
         tag={"PRO"}
@@ -12,7 +12,7 @@ const GalleryMain = () => {
         viewTitle={"13.4k"}
       />
       <GalleryCards
-        image={"assets/test-img-2.png"}
+        image={"assets/test-img-2.jpeg"}
         pfp={"assets/pfp.png"}
         user={"Jane Doe"}
         tag={"TEAM"}
@@ -20,14 +20,14 @@ const GalleryMain = () => {
         viewTitle={"13.4k"}
       />
       <GalleryCards
-        image={"assets/test-img-3.png"}
+        image={"assets/test-img-3.jpeg"}
         pfp={"assets/pfp.png"}
         user={"Kirby Rivera"}
         heartTitle={"123"}
         viewTitle={"13.4k"}
       />
       <GalleryCards
-        image={"assets/test-img-4.png"}
+        image={"assets/test-img-4.jpeg"}
         pfp={"assets/pfp.png"}
         user={"Johnny Po"}
         tag={"PRO"}
