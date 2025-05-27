@@ -36,14 +36,14 @@ const GalleryNav = () => {
       <div className={styles["gallery-main-navs"]}>
         {!hideLeftArrow && (
           <NavButtons
-            className={"gallery-main-navs-btn-right"}
+            className={styles["gallery-main-navs-btn-right"]}
             onClick={scrollLeft}
             asset={"assets/chevron-left.svg"}
           />
         )}
         {!hideRightArrow && (
           <NavButtons
-            className={"gallery-main-navs-btn-left"}
+            className={styles["gallery-main-navs-btn-left"]}
             onClick={scrollRight}
             asset={"assets/chevron-right.svg"}
           />
