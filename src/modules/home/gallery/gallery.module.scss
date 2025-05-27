@@ -4,10 +4,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 50px;
+  padding: 40px 72px;
   gap: 30px;
   margin: 0 auto;
-  max-width: 1440px;
+
+  @media (max-width: 1024px) {
+    padding: 32px;
+  }
+  @media (max-width: 862px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
+
+  &-signup-btn {
+    padding: 10px 20px;
+    border-radius: 1e+07px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background: black;
+  }
 }
 
 //GalleryNav.jsx
@@ -17,6 +36,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 
   &-title {
     border: 1px solid rgb(202, 201, 201, 0.7);
@@ -115,9 +135,17 @@
   @media (max-width: 959px) {
     width: 100%;
 
+    .horizontal-line {
+      width: 100%;
+      position: absolute;
+      top: 56px;
+      z-index: 30;
+      border: 0.5px solid rgb(243, 242, 242);
+    }
+
     &-navs {
       width: 102%;
-      top: 54px;
+      top: 74px;
       z-index: 15;
 
       &-btn-right {
@@ -132,7 +160,7 @@
     &-items {
       width: 100%;
       position: absolute;
-      top: 56px;
+      top: 76px;
       margin: 0 auto;
       z-index: 30;
       pointer-events: auto;
@@ -237,14 +265,17 @@
   grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
   gap: 30px;
   place-items: center;
-  margin: 50px auto;
-  padding: 0 70px;
+  margin: 20px auto;
 
-  @media (max-width: 862px) {
-    padding: 20px;
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  @media (max-width: 480px) {
-    padding: 10px;
+  @media (max-width: 959px) {
+    margin: 50px 0;
   }
+
+  // @media (max-width: 480px) {
+  //   padding: 10px;
+  // }
 }

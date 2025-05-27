@@ -1,17 +1,9 @@
-import Nav from "../../modules/nav/Nav";
-import Hero from "../../modules/hero/Hero";
-import Gallery from "../../modules/gallery/Gallery";
-import Carousel from "../../modules/carousel/Carousel";
-import Layout from "../../pages/Layout";
+import Home from "../../modules/home/Home";
 
 const index = () => {
   return (
     <>
-      <Layout>
-        <Hero />
-        <Gallery />
-        <Carousel />
-      </Layout>
+      <Home />
     </>
   );
 };

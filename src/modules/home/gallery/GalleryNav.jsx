@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { GALLERY_ASSETS } from "../../assets/gallery-assets";
-import useGalleryScroll from "./hoooks/useGalleryScroll";
-import styles from "./gallery.module.scss";
+import { GALLERY_ASSETS } from "../../../assets/gallery-assets";
+import useGalleryScroll from "./hooks/useGalleryScroll";
+import styles from "./Gallery.module.scss";
 
 const GalleryNav = () => {
   const scrollContainerRef = useRef(null);
@@ -33,6 +33,7 @@ const GalleryNav = () => {
       <button className={styles["gallery-main-title"]}>
         Popular {GALLERY_ASSETS["chevron-down"]}
       </button>
+      <span className={styles["horizontal-line"]}/>
       <div className={styles["gallery-main-navs"]}>
         {!hideLeftArrow && (
           <NavButtons

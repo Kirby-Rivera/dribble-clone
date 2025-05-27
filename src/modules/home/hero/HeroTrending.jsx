@@ -1,3 +1,5 @@
+import styles from "./Hero.module.scss";
+
 const HeroTrending = () => {
   const items = [
     "landing page",
@@ -9,12 +11,12 @@ const HeroTrending = () => {
   ];
 
   return (
-    <div className="hero-trending">
-      <span className="hero-trending-head">Trending searches</span>
-      <div className="hero-trending-items">
+    <div className={styles["hero-trending"]}>
+      <span className={styles["hero-trending-head"]}>Trending searches</span>
+      <div className={styles["hero-trending-items"]}>
         {items.map((items, index) => {
           return (
-            <div key={index} className="item">
+            <div key={index} className={styles["item"]}>
               {items}
             </div>
           );
