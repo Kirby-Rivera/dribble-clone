@@ -8,6 +8,7 @@ const Gallery = () => {
       <section className={styles["gallery"]}>
         <GalleryNav />
         <GalleryMain />
+        <button className={styles["gallery-signup-btn"]}>Sing up to continue</button>
       </section>
     </>
   );

@@ -4,11 +4,11 @@ const GalleryCards = ({ image, profileImg, user, tag, likes, views }) => {
   return (
     <div className={styles["gal-card-main"]}>
       <div className={styles["gal-card-main-img-container"]}>
-        <img src={image} alt="gallery image" />
+        <img src={image} alt="gallery canvas" />
       </div>
       <div className={styles["gal-card-main-content-container"]}>
         <div className={styles["gal-card-user"]}>
-          <img src={profileImg} alt="profile image" />
+          <img src={profileImg} alt="profile icon" />
           <h4>{user}</h4>
           <span>{tag}</span>
         </div>

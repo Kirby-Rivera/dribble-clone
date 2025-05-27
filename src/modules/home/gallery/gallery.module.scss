@@ -18,6 +18,15 @@
   @media (max-width: 480px) {
     padding: 20px;
   }
+
+  &-signup-btn {
+    padding: 10px 20px;
+    border-radius: 1e+07px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background: black;
+  }
 }
 
 //GalleryNav.jsx
@@ -126,9 +135,17 @@
   @media (max-width: 959px) {
     width: 100%;
 
+    .horizontal-line {
+      width: 100%;
+      position: absolute;
+      top: 56px;
+      z-index: 30;
+      border: 0.5px solid rgb(243, 242, 242);
+    }
+
     &-navs {
       width: 102%;
-      top: 54px;
+      top: 74px;
       z-index: 15;
 
       &-btn-right {
@@ -143,7 +160,7 @@
     &-items {
       width: 100%;
       position: absolute;
-      top: 56px;
+      top: 76px;
       margin: 0 auto;
       z-index: 30;
       pointer-events: auto;
@@ -253,9 +270,10 @@
   @media (max-width: 1440px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  // @media (max-width: 862px) {
-  //   padding: 20px;
-  // }
+
+  @media (max-width: 959px) {
+    margin: 50px 0;
+  }
 
   // @media (max-width: 480px) {
   //   padding: 10px;

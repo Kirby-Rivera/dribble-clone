@@ -33,6 +33,7 @@ const GalleryNav = () => {
       <button className={styles["gallery-main-title"]}>
         Popular {GALLERY_ASSETS["chevron-down"]}
       </button>
+      <span className={styles["horizontal-line"]}/>
       <div className={styles["gallery-main-navs"]}>
         {!hideLeftArrow && (
           <NavButtons
