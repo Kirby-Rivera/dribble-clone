@@ -1,7 +1,7 @@
-import Index from "./views/home/Index";
+import Home from "./views/home/Index";
 
 function App() {
-  return <Index />;
+  return <Home />;
 }
 
 export default App;

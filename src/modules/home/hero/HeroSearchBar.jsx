@@ -1,4 +1,4 @@
-import { HERO_ASSETS } from "../../assets/hero-assets";
+import { HERO_ASSETS } from "../../../assets/hero-assets";
 
 const HeroSearchBar = ({ placeholder, isScrolled }) => {
   return (

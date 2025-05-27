@@ -1,5 +1,5 @@
 import Item from "./Item";
-import HeroSearchBar from "../hero/HeroSearchBar";
+import HeroSearchBar from "../../modules/home/hero/HeroSearchBar";
 import { NAV_ASSETS } from "../../assets/nav-assets";
 
 const NavItems = ({ isScrolled }) => {

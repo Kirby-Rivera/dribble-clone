@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { GALLERY_ASSETS } from "../../assets/gallery-assets";
+import { GALLERY_ASSETS } from "../../../assets/gallery-assets";
 import useGalleryScroll from "./hoooks/useGalleryScroll";
 import styles from "./gallery.module.scss";
 
