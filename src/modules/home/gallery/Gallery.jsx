@@ -7,8 +7,6 @@ const Gallery = () => {
     <>
       <section className={styles["gallery"]}>
         <GalleryNav />
-      </section>
-      <section className={styles["works"]}>
         <GalleryMain />
       </section>
     </>

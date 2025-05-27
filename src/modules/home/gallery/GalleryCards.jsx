@@ -1,6 +1,6 @@
 import styles from "./Gallery.module.scss";
 
-const GalleryCards = ({ image, pfp, user, tag, heartTitle, viewTitle }) => {
+const GalleryCards = ({ image, profileImg, user, tag, likes, views }) => {
   return (
     <div className={styles["gal-card-main"]}>
       <div className={styles["gal-card-main-img-container"]}>
@@ -8,15 +8,15 @@ const GalleryCards = ({ image, pfp, user, tag, heartTitle, viewTitle }) => {
       </div>
       <div className={styles["gal-card-main-content-container"]}>
         <div className={styles["gal-card-user"]}>
-          <img src={pfp} alt="profile image" />
+          <img src={profileImg} alt="profile image" />
           <h4>{user}</h4>
           <span>{tag}</span>
         </div>
         <div className={styles["gal-card-stats"]}>
           <img src="assets/heart.svg" alt="heart icon" />
-          <p className="hearts">{heartTitle}</p>
+          <p className="hearts">{likes}</p>
           <img src="assets/eye.svg" alt="view icon" />
-          <p className="views">{viewTitle}</p>
+          <p className="views">{views}</p>
         </div>
       </div>
     </div>

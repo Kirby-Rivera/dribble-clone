@@ -8,49 +8,62 @@ const CarouselContainer = () => {
     "--quantity": "8",
   };
 
+  const carouselItems = [
+    {
+      position: 1,
+      image: "assets/productdesign.gif",
+      title: "Product Design",
+    },
+    {
+      position: 2,
+      image: "assets/animation.webp",
+      title: "Animation",
+    },
+    {
+      position: 3,
+      image: "assets/branding.webp",
+      title: "Branding",
+    },
+    {
+      position: 4,
+      image: "assets/typography.webp",
+      title: "Typography",
+    },
+    {
+      position: 5,
+      image: "assets/print.webp",
+      title: "Print",
+    },
+    {
+      position: 6,
+      image: "assets/webdesign.webp",
+      title: "Web Design",
+    },
+    {
+      position: 7,
+      image: "assets/illustration.webp",
+      title: "Illustration",
+    },
+    {
+      position: 8,
+      image: "assets/mobile.webp",
+      title: "Mobile",
+    },
+  ];
+
   return (
     <div className={styles["carousel-container"]} style={variables}>
       <div className={styles["carousel-list"]}>
-        <CarouselItem
-          position={1}
-          image={"assets/productdesign.gif"}
-          title={"Product Design"}
-        />
-        <CarouselItem
-          position={2}
-          image={"assets/animation.webp"}
-          title={"Animation"}
-        />
-        <CarouselItem
-          position={3}
-          image={"assets/branding.webp"}
-          title={"Branding"}
-        />
-        <CarouselItem
-          position={4}
-          image={"assets/typography.webp"}
-          title={"Typography"}
-        />
-        <CarouselItem
-          position={5}
-          image={"assets/print.webp"}
-          title={"Print"}
-        />
-        <CarouselItem
-          position={6}
-          image={"assets/webdesign.webp"}
-          title={"Web Design"}
-        />
-        <CarouselItem
-          position={7}
-          image={"assets/illustration.webp"}
-          title={"Illustration"}
-        />
-        <CarouselItem
-          position={8}
-          image={"assets/mobile.webp"}
-          title={"Mobile"}
-        />
+        {carouselItems.map((item, index) => {
+          return (
+            <CarouselItem
+              key={index}
+              position={item.position}
+              image={item.image}
+              title={item.title}
+            />
+          );
+        })}
       </div>
     </div>
   );

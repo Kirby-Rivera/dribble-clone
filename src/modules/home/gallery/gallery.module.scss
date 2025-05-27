@@ -4,10 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 50px;
+  padding: 40px 72px;
   gap: 30px;
   margin: 0 auto;
-  max-width: 1440px;
+
+  @media (max-width: 1024px) {
+    padding: 32px;
+  }
+  @media (max-width: 862px) {
+    padding: 32px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
 }
 
 //GalleryNav.jsx
@@ -17,6 +27,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 
   &-title {
     border: 1px solid rgb(202, 201, 201, 0.7);
@@ -234,20 +245,19 @@
 .gal-main-grid {
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
   gap: 30px;
   place-items: center;
-  margin: 50px auto;
-  padding: 0 70px;
+  margin: 20px auto;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  @media (max-width: 862px) {
-    padding: 20px;
-  }
+  // @media (max-width: 862px) {
+  //   padding: 20px;
+  // }
 
-  @media (max-width: 480px) {
-    padding: 10px;
-  }
+  // @media (max-width: 480px) {
+  //   padding: 10px;
+  // }
 }
