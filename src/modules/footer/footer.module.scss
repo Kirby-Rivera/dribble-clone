@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 1200px;
+
+  &-upper {
+    display: flex;
+    gap: 80px;
+    padding: 74px 0 44px 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+
+    .main-svg {
+      width: 104px;
+      height: 30px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .links {
+      display: flex;
+      gap: 45px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    }
+
+    .socials {
+      display: flex;
+      height: 18px;
+      gap: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &-lower {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 0;
+    width: 105%;
+
+    .lower-list {
+      display: flex;
+      gap: 16px;
+
+      a {
+        text-decoration: none;
+        color: rgb(47, 47, 47);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 1009px;
+
+    &-upper {
+      width: 945px;
+      gap: 60px;
+
+      .links {
+        gap: 16px;
+        white-space: nowrap;
+      }
+    }
+
+    &-lower {
+      width: 945px;
+    }
+  }
+
+  @media (max-width: 1009px) {
+    width: 100vw;
+
+    &-upper {
+      width: 741px;
+      flex-direction: column;
+      gap: 20px;
+
+      .socials {
+        gap: 8px;
+        justify-content: center;
+      }
+    }
+
+    &-lower {
+      width: 741px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-lower {
+      width: 100%;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  @media (max-width: 739px) {
+    width: 100vw;
+
+    &-upper {
+      width: 100%;
+
+      .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &-lower {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .lower-list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 656px) {
+    width: 100vw;
+    padding: 0 27px;
+
+    &-upper {
+      width: 100%;
+    }
+
+    &-lower {
+      width: 100%;
+    }
+  }
+}

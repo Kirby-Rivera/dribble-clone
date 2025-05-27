@@ -1,0 +1,255 @@
+//Gallery.jsx
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  // @media (max-width: 480px) {
+  //   padding: 20px 30px;
+  // }
+}
+
+//GalleryNav.jsx
+
+.gallery-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  &-title {
+    border: 1px solid rgb(202, 201, 201, 0.7);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  &-filter {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid rgb(202, 201, 201, 0.7);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    background: none;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  &-navs {
+    display: none;
+  }
+
+  &-items {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1000px;
+
+    &-item {
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 1406px) {
+    position: relative;
+    max-width: 100%;
+
+    &-navs {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 79%;
+      left: 50%;
+      transform: translate(-49%);
+
+      &-btn-right {
+        background: white;
+        border: none;
+        width: 50px;
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      &-btn-left {
+        background: white;
+        border: none;
+        width: 50px;
+        margin-left: auto;
+        cursor: pointer;
+        z-index: 20;
+      }
+    }
+
+    &-items {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      z-index: 10;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-item {
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 959px) {
+    width: 100%;
+
+    &-navs {
+      width: 102%;
+      top: 54px;
+      z-index: 15;
+
+      &-btn-right {
+        z-index: 20;
+      }
+
+      &-btn-left {
+        z-index: 20;
+      }
+    }
+
+    &-items {
+      width: 100%;
+      position: absolute;
+      top: 56px;
+      margin: 0 auto;
+      z-index: 10;
+      pointer-events: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &-title{
+      margin-right: 10px;
+    }
+
+    &-filter {
+      margin-left: 10px;
+    }
+  }
+}
+
+//Works Section
+
+//GalleryCards.jsx
+
+.gal-card-main {
+  &-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    width: 100%;
+
+    .gal-card-user {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+
+      h4 {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      span {
+        font-size: 11px;
+        background-color: rgba($color: #cabdbd, $alpha: 0.8);
+        padding: 2px;
+        font-weight: 600;
+        color: white;
+        border-radius: 2px;
+        transition-duration: 0.7s;
+
+        &:hover {
+          background-color: black;
+        }
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+    }
+
+    .gal-card-stats {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 17px;
+        margin: 0 3px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+
+      .hearts {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+//GalleryMain.jsx
+
+.gal-main-grid {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+  gap: 30px;
+  place-items: center;
+  margin: 50px auto;
+  padding: 0 70px;
+
+  @media (max-width: 862px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+  }
+}
