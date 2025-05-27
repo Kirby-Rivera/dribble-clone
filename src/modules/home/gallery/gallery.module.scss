@@ -234,12 +234,15 @@
 .gal-main-grid {
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   place-items: center;
   margin: 50px auto;
   padding: 0 70px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
   @media (max-width: 862px) {
     padding: 20px;
   }

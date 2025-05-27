@@ -1,6 +1,6 @@
 import GalleryNav from "./GalleryNav";
 import GalleryMain from "./GalleryMain";
-import styles from "./gallery.module.scss";
+import styles from "./Gallery.module.scss";
 
 const Gallery = () => {
   return (

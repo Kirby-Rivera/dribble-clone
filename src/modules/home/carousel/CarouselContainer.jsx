@@ -1,5 +1,5 @@
 import CarouselItem from "./CarouselItem";
-import styles from "./carousel.module.scss";
+import styles from "./Carousel.module.scss";
 
 const CarouselContainer = () => {
   const variables = {

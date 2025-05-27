@@ -1,5 +1,5 @@
 import GalleryCards from "./GalleryCards";
-import styles from "./gallery.module.scss"
+import styles from "./Gallery.module.scss"
 
 const GalleryMain = () => {
   return (

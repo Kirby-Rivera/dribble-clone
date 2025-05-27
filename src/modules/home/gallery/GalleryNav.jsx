@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { GALLERY_ASSETS } from "../../../assets/gallery-assets";
-import useGalleryScroll from "./hoooks/useGalleryScroll";
-import styles from "./gallery.module.scss";
+import useGalleryScroll from "./hooks/useGalleryScroll";
+import styles from "./Gallery.module.scss";
 
 const GalleryNav = () => {
   const scrollContainerRef = useRef(null);
