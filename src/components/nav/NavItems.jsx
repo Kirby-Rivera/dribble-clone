@@ -22,7 +22,12 @@ const NavItems = ({ isScrolled }) => {
           return <Item key={index} title={item} isDropdown={index < 2} />;
         })}
       </ul>
-      <button className={styles["main-dd-md"]}>{NAV_ASSETS.burgerMenu}</button>
+      <button className={styles["main-dd-md"]}>
+        {/* {NAV_ASSETS.burgerMenu} */}
+        <hr />
+        <hr />
+        <hr />
+      </button>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import styles from "./Assets.module.scss"
+
 export const NAV_ASSETS = {
   dribbleLogo: (
     <svg
@@ -6,7 +8,7 @@ export const NAV_ASSETS = {
       height="25"
       viewBox="0 0 210 59"
       fill="black"
-      className="main-svg"
+      className={styles["dribble-logo"]}
     >
       <path
         fillRule="evenodd"
