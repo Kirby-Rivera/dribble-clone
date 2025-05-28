@@ -1,6 +1,6 @@
 import CarouselItem from "./CarouselItem";
 import styles from "./Carousel.module.scss";
-import carouselItems from "./carousel-content.json"
+import carouselItems from "./carousel-content.json";
 
 const CarouselContainer = () => {
   return (

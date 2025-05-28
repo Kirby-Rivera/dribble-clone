@@ -2,7 +2,7 @@ import styles from "./Carousel.module.scss";
 
 const CarouselItem = ({ props }) => {
   const { image, title, position } = props;
-  
+
   const variable = {
     "--position": position,
   };
