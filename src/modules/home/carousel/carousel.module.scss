@@ -1,3 +1,7 @@
+$width: 200px;
+$height: 194px;
+$quantity: 8;
+
 //Carousel.jsx
 
 .carousel {
@@ -8,9 +12,8 @@
 
 .carousel-container {
   width: 100%;
-  height: var(--height);
+  height: $height;
   overflow: hidden;
-
 
   @media (max-width: 1204px) {
     overflow-x: scroll;
@@ -20,7 +23,7 @@
   .carousel-list {
     display: flex;
     width: 100%;
-    min-width: calc(var(--width) * var(--quantity));
+    min-width: calc($width * $quantity);
     position: relative;
 
     @media (max-width: 1204px) {
@@ -35,13 +38,13 @@
 
   .carousel-item {
     padding: 0 20px;
-    width: var(--width);
-    height: var(--height);
+    width: $width;
+    height: $height;
     position: absolute;
     left: 100%;
     animation: autoRun 30s linear infinite;
     animation-delay: calc(
-      (30s / var(--quantity)) * (var(--position) - 1) - 30s
+      (30s / $quantity) * (var(--position) - 1) - 30s
     ) !important;
     cursor: pointer;
 
@@ -83,6 +86,6 @@
     left: 100%;
   }
   to {
-    left: calc(var(--width) * -1);
+    left: calc($width * -1);
   }
 }

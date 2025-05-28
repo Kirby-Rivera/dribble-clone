@@ -2,12 +2,6 @@ import CarouselItem from "./CarouselItem";
 import styles from "./Carousel.module.scss";
 
 const CarouselContainer = () => {
-  const variables = {
-    "--width": "200px",
-    "--height": "194px",
-    "--quantity": "8",
-  };
-
   const carouselItems = [
     {
       position: 1,
@@ -52,7 +46,7 @@ const CarouselContainer = () => {
   ];
 
   return (
-    <div className={styles["carousel-container"]} style={variables}>
+    <div className={styles["carousel-container"]}>
       <div className={styles["carousel-list"]}>
         {carouselItems.map((item, index) => {
           return (
