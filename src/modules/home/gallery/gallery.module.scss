@@ -26,6 +26,11 @@
     font-weight: 600;
     color: white;
     background: black;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: grey;
+    }
   }
 }
 
@@ -213,16 +218,18 @@
       h4 {
         font-size: 14px;
         margin: 0;
+        font-weight: 600;
       }
 
       span {
-        font-size: 11px;
+        font-size: 10px;
         background-color: rgba($color: #cabdbd, $alpha: 0.8);
-        padding: 2px;
+        padding: 3px;
         font-weight: 600;
         color: white;
-        border-radius: 2px;
+        border-radius: 3px;
         transition-duration: 0.7s;
+        line-height: 10px;
 
         &:hover {
           background-color: black;
@@ -247,7 +254,8 @@
       }
 
       p {
-        font-size: 11px;
+        font-size: 12px;
+        line-height: 16px;
       }
 
       .hearts {
