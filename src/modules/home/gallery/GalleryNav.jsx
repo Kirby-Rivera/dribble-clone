@@ -38,7 +38,7 @@ const GalleryNav = () => {
       <Button
         className={styles["gallery-main-title"]}
         title={"Popular"}
-        asset={GALLERY_ASSETS["chevron-down"]}
+        asset={GALLERY_ASSETS["down"]}
       />
       <span className={styles["horizontal-line"]} />
       <div className={styles["gallery-main-navs"]}>

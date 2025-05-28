@@ -1,14 +1,15 @@
 import Item from "./Item";
 import HeroSearchBar from "../../modules/home/hero/HeroSearchBar";
 import { NAV_ASSETS } from "../../assets/nav-assets";
+import styles from "./Nav.module.scss";
 
 const NavItems = ({ isScrolled }) => {
   const items = ["Explore", "Hire a Designer", "Find Jobs", "Blog"];
 
   return (
-    <div className="main">
-      <div className="search-logo-section">
-        {NAV_ASSETS["dribble-logo"]}
+    <div className={styles["main"]}>
+      <div className={styles["search-logo-section"]}>
+        {NAV_ASSETS["dribbleLogo"]}
         {isScrolled && (
           <HeroSearchBar
             isScrolled={isScrolled}
@@ -16,12 +17,12 @@ const NavItems = ({ isScrolled }) => {
           />
         )}
       </div>
-      <ul className="main-item">
+      <ul className={styles["main-item"]}>
         {items.map((item, index) => {
           return <Item key={index} title={item} isDropdown={index < 2} />;
         })}
       </ul>
-      <button className="main-dd-md">{NAV_ASSETS.ewan}</button>
+      <button className={styles["main-dd-md"]}>{NAV_ASSETS.burgerMenu}</button>
     </div>
   );
 };

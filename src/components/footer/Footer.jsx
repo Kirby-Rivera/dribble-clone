@@ -1,4 +1,4 @@
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 import FooterUpper from "./FooterUpper";
 import FooterLower from "./FooterLower";
 

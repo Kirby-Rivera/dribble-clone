@@ -1,10 +1,11 @@
 import Button from "./Button";
+import styles from "./Nav.module.scss";
 
 const NavAuth = ({ isScrolled }) => {
   return (
-    <div className="nav-auth">
+    <div className={styles["nav-auth"]}>
       <img
-        className={isScrolled ? "hide" : "show"}
+        className={isScrolled ? styles["hide"] : styles["show"]}
         src="assets/asset 101.svg"
         alt="search icon"
       />
