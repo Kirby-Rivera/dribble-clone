@@ -1,5 +1,5 @@
 import Lists from "./FooterList";
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 
 const FooterLower = () => {
   const date = new Date().getFullYear();

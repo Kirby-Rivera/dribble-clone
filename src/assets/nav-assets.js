@@ -1,5 +1,5 @@
 export const NAV_ASSETS = {
-  "dribble-logo": (
+  dribbleLogo: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="89"
@@ -17,7 +17,7 @@ export const NAV_ASSETS = {
     </svg>
   ),
 
-  ewan: (
+  burgerMenu: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"

@@ -1,9 +1,11 @@
+import styles from "./Nav.module.scss";
+
 const Item = ({ title, isDropdown = false }) => {
   return (
-    <li className="item">
+    <li className={styles["item"]}>
       {title}
       <svg
-        className={isDropdown ? "item-show" : "item-hide"}
+        className={isDropdown ? styles["item-show"] : styles["item-hide"]}
         xmlns="http://www.w3.org/2000/svg"
         width="17"
         height="17"

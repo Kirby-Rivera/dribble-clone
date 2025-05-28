@@ -1,6 +1,6 @@
 import NavItems from "./NavItems";
 import NavAuth from "./NavAuth";
-import "./nav.scss";
+import styles from "./Nav.module.scss";
 import { useState, useEffect } from 'react'
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={scrollY < 400 ? "nav" : "nav-scrolled"}>
+    <nav className={scrollY < 400 ? styles["nav"] : styles["nav-scrolled"]}>
       <NavItems isScrolled={scrollY < 100 ? false : true}/>
       <NavAuth isScrolled={scrollY < 100 ? true : false} />
     </nav>
