@@ -1,11 +1,7 @@
 import Home from "../../modules/home/Home";
 
 const index = () => {
-  return (
-    <>
-      <Home />
-    </>
-  );
+  return <Home />;
 };
 
 export default index;
