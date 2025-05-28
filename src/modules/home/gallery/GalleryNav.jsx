@@ -34,17 +34,17 @@ const GalleryNav = () => {
   ];
 
   return (
-    <div className={styles["gallery-main"]}>
+    <div className={styles["gallery-nav"]}>
       <Button
-        className={styles["gallery-main-title"]}
+        className={styles["gallery-nav-title"]}
         title={"Popular"}
         asset={GALLERY_ASSETS["down"]}
       />
       <span className={styles["horizontal-line"]} />
-      <div className={styles["gallery-main-navs"]}>
+      <div className={styles["gallery-nav-navs"]}>
         {!hideLeftArrow && (
           <Button
-            className={styles["gallery-main-navs-btn-right"]}
+            className={styles["gallery-nav-navs-btn-right"]}
             onClick={scrollLeft}
             asset={"assets/chevron-left.svg"}
             forNav={true}
@@ -52,24 +52,24 @@ const GalleryNav = () => {
         )}
         {!hideRightArrow && (
           <Button
-            className={styles["gallery-main-navs-btn-left"]}
+            className={styles["gallery-nav-navs-btn-left"]}
             onClick={scrollRight}
             asset={"assets/chevron-right.svg"}
             forNav={true}
           />
         )}
       </div>
-      <div className={styles["gallery-main-items"]} ref={scrollContainerRef}>
+      <div className={styles["gallery-nav-items"]} ref={scrollContainerRef}>
         {items.map((item, index) => {
           return (
-            <div key={index} className={styles["gallery-main-items-item"]}>
+            <div key={index} className={styles["gallery-nav-items-item"]}>
               {item}
             </div>
           );
         })}
       </div>
       <Button
-        className={styles["gallery-main-filter"]}
+        className={styles["gallery-nav-filter"]}
         title={"Filter"}
         asset={GALLERY_ASSETS.filter}
       />

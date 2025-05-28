@@ -1,0 +1,42 @@
+[
+    {
+      "position": 1,
+      "image": "assets/productdesign.gif",
+      "title": "Product Design"
+    },
+    {
+      "position": 2,
+      "image": "assets/animation.webp",
+      "title": "Animation"
+    },
+    {
+      "position": 3,
+      "image": "assets/branding.webp",
+      "title": "Branding"
+    },
+    {
+      "position": 4,
+      "image": "assets/typography.webp",
+      "title": "Typography"
+    },
+    {
+      "position": 5,
+      "image": "assets/print.webp",
+      "title": "Print"
+    },
+    {
+      "position": 6,
+      "image": "assets/webdesign.webp",
+      "title": "Web Design"
+    },
+    {
+      "position": 7,
+      "image": "assets/illustration.webp",
+      "title": "Illustration"
+    },
+    {
+      "position": 8,
+      "image": "assets/mobile.webp",
+      "title": "Mobile"
+    }
+  ]

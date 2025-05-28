@@ -1,9 +1,11 @@
-import styles from './Carousel.module.scss'
+import styles from "./Carousel.module.scss";
 
-const CarouselItem = ({ image, title, position }) => {
+const CarouselItem = ({ props }) => {
+  const { image, title, position } = props;
+  
   const variable = {
-    "--position": position
-  }
+    "--position": position,
+  };
 
   return (
     <div className={styles["carousel-item"]} style={variable}>

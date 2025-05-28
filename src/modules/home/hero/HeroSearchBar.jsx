@@ -11,7 +11,7 @@ const HeroSearchBar = ({ placeholder, isScrolled }) => {
       />
       <span className={styles["hero-search-dropdown"]}>
         Shots
-        {HERO_ASSETS["chevron-down"]}
+        {HERO_ASSETS["chevronDown"]}
       </span>
       <button className={styles["hero-search-btn"]}>
         <img className={styles["icon"]} src="assets/asset 101.svg" alt="search icon" />
