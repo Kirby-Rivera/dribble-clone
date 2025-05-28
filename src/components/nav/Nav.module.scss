@@ -12,8 +12,9 @@ $color-white: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 $padding-side;
+  padding: 20px $padding-side;
   background-color: white;
+  max-height: 92px;
   z-index: 50;
 
   @media (max-width: 1204px) {
