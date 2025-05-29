@@ -17,7 +17,6 @@ $quantity: 8;
 
   @media (max-width: 1204px) {
     overflow-x: scroll;
-    margin: 0 auto;
   }
 
   .carousel-list {
@@ -27,7 +26,7 @@ $quantity: 8;
     position: relative;
 
     @media (max-width: 1204px) {
-      width: 90%;
+      min-width: calc($width * 9);
       white-space: nowrap;
       scroll-behavior: smooth;
       gap: 20px;
@@ -47,6 +46,10 @@ $quantity: 8;
       (30s / $quantity) * (var(--position) - 1) - 30s
     ) !important;
     cursor: pointer;
+
+    &:nth-child(9) {
+      display: none;
+    }
 
     img {
       width: 200px;
@@ -73,10 +76,6 @@ $quantity: 8;
       animation: none;
       left: -10px;
       position: relative;
-
-      .carousel-padding {
-        display: none;
-      }
     }
   }
 

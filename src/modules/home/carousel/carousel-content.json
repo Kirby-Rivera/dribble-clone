@@ -38,5 +38,10 @@
       "position": 8,
       "image": "assets/mobile.webp",
       "title": "Mobile"
+    },
+    {
+      "position": 9,
+      "image": "assets/mobile.webp",
+      "title": "Mobile"
     }
   ]
