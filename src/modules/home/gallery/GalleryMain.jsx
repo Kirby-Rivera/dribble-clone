@@ -6,7 +6,7 @@ const GalleryMain = () => {
   return (
     <div className={styles["gal-main-grid"]}>
       {itemContent.map((item, index) => {
-        return <GalleryCards key={index} props={{ ...item }} />;
+        return <GalleryCards key={index} {...item} />;
       })}
     </div>
   );

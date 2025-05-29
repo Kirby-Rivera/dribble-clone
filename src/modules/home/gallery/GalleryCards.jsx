@@ -1,6 +1,6 @@
 import styles from "./Gallery.module.scss";
 
-const GalleryCards = ({props}) => {
+const GalleryCards = (props) => {
   const { image, profileImg, user, tag, likes, views } = props;
 
   return (
