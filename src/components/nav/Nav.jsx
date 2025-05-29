@@ -1,26 +1,14 @@
 import NavItems from "./NavItems";
 import NavAuth from "./NavAuth";
 import styles from "./Nav.module.scss";
-import { useState, useEffect } from 'react'
+import useNavScroll from "./useNavScroll";
 
 const Nav = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const scrollY = useNavScroll();
 
   return (
     <nav className={scrollY < 400 ? styles["nav"] : styles["nav-scrolled"]}>
-      <NavItems isScrolled={scrollY < 100 ? false : true}/>
+      <NavItems isScrolled={scrollY < 100 ? false : true} />
       <NavAuth isScrolled={scrollY < 100 ? true : false} />
     </nav>
   );

@@ -1,5 +1,5 @@
 import styles from "./Hero.module.scss";
-import { HERO_ASSETS } from "../../../assets/hero-assets";
+import { VECTOR_ASSETS } from "../../../assets/vector-assets";
 
 const HeroSearchBar = ({ placeholder, isScrolled }) => {
   return (
@@ -11,7 +11,7 @@ const HeroSearchBar = ({ placeholder, isScrolled }) => {
       />
       <span className={styles["hero-search-dropdown"]}>
         Shots
-        {HERO_ASSETS["chevronDown"]}
+        {VECTOR_ASSETS["downIcon"]}
       </span>
       <button className={styles["hero-search-btn"]}>
         <img className={styles["icon"]} src="assets/asset 101.svg" alt="search icon" />

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { GALLERY_ASSETS } from "../../../assets/gallery-assets";
+import { VECTOR_ASSETS } from "../../../assets/vector-assets";
 import useGalleryScroll from "./useGalleryScroll";
 import styles from "./Gallery.module.scss";
 
@@ -38,7 +38,7 @@ const GalleryNav = () => {
       <Button
         className={styles["gallery-nav-title"]}
         title={"Popular"}
-        asset={GALLERY_ASSETS["down"]}
+        asset={VECTOR_ASSETS["downIcon"]}
       />
       <span className={styles["horizontal-line"]} />
       <div className={styles["gallery-nav-navs"]}>
@@ -71,7 +71,7 @@ const GalleryNav = () => {
       <Button
         className={styles["gallery-nav-filter"]}
         title={"Filter"}
-        asset={GALLERY_ASSETS.filter}
+        asset={VECTOR_ASSETS.filter}
       />
     </div>
   );

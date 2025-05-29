@@ -1,6 +1,6 @@
 import Item from "./Item";
 import HeroSearchBar from "../../modules/home/hero/HeroSearchBar";
-import { NAV_ASSETS } from "../../assets/nav-assets";
+import { VECTOR_ASSETS } from "../../assets/vector-assets";
 import styles from "./Nav.module.scss";
 
 const NavItems = ({ isScrolled }) => {
@@ -9,7 +9,7 @@ const NavItems = ({ isScrolled }) => {
   return (
     <div className={styles["main"]}>
       <div className={styles["search-logo-section"]}>
-        {NAV_ASSETS["dribbleLogo"]}
+        {VECTOR_ASSETS["dribbleLogo"]}
         {isScrolled && (
           <HeroSearchBar
             isScrolled={isScrolled}
@@ -23,7 +23,6 @@ const NavItems = ({ isScrolled }) => {
         })}
       </ul>
       <button className={styles["main-dd-md"]}>
-        {/* {NAV_ASSETS.burgerMenu} */}
         <hr />
         <hr />
         <hr />

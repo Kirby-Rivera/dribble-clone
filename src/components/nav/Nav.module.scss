@@ -164,8 +164,10 @@ $color-white: white;
     }
 
     &-show {
-      display: inline-block;
+      display: flex;
+      align-items: center;
       margin-left: 3px;
+
     }
 
     &-hide {
