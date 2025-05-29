@@ -21,7 +21,7 @@ $quantity: 8;
 
   .carousel-list {
     display: flex;
-    width: 100%;
+    width: 120%;
     min-width: calc($width * $quantity);
     position: relative;
 
@@ -36,7 +36,6 @@ $quantity: 8;
   //CarouselItem.jsx
 
   .carousel-item {
-    padding: 0 20px;
     width: $width;
     height: $height;
     position: absolute;
