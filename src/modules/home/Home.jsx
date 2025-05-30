@@ -1,7 +1,7 @@
-import Layout from "../../components/layout/Layout";
-import Hero from "../home/hero/Hero";
-import Gallery from "../home/gallery/Gallery";
-import Carousel from "../home/carousel/Carousel";
+import Layout from "components/layout/Layout";
+import Hero from "./hero/Hero";
+import Gallery from "./gallery/Gallery";
+import Carousel from "./carousel/Carousel";
 
 const Home = () => {
   return (

@@ -1,5 +1,5 @@
 import styles from "./Hero.module.scss";
-import { VECTOR_ASSETS } from "../../../assets/vector-assets";
+import { VECTOR_ASSETS } from "assets/vector-assets";
 
 const HeroSearchBar = ({ placeholder, isScrolled }) => {
   return (

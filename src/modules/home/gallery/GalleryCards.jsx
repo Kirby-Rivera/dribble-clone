@@ -1,5 +1,15 @@
 import styles from "./Gallery.module.scss";
 
+function OverlayBtn(props) {
+  const { svgIcon } = props;
+
+  return (
+    <button className={styles["content-btn"]}>
+      <img src={svgIcon} alt="overlay-icon" />
+    </button>
+  );
+}
+
 const GalleryCards = (props) => {
   const { image, profileImg, user, tag, likes, views } = props;
 
@@ -10,12 +20,8 @@ const GalleryCards = (props) => {
         <div className={styles["gal-card-main-overlay"]}>
           <div className={styles["content"]}>{user}</div>
           <div className={styles["content-container"]}>
-            <button className={styles["content-btn"]}>
-              <img src="assets/save-icon.svg" alt="" />
-            </button>
-            <button className={styles["content-btn"]}>
-              <img src="assets/heart.svg" alt="" />
-            </button>
+            <OverlayBtn svgIcon={"assets/save-icon.svg"} />
+            <OverlayBtn svgIcon={"assets/heart.svg"} />
           </div>
         </div>
       </div>

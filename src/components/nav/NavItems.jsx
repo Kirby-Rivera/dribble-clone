@@ -1,5 +1,5 @@
-import HeroSearchBar from "../../modules/home/hero/HeroSearchBar";
-import { VECTOR_ASSETS } from "../../assets/vector-assets";
+import HeroSearchBar from "modules/home/hero/HeroSearchBar";
+import { VECTOR_ASSETS } from "assets/vector-assets";
 import styles from "./Nav.module.scss";
 
 const NavItems = ({ isScrolled }) => {
@@ -19,7 +19,7 @@ const NavItems = ({ isScrolled }) => {
       <ul className={styles["main-item"]}>
         {items.map((item, index) => {
           return (
-            <li className={styles["item"]}>
+            <li key={index} className={styles["item"]}>
               {item}
               <div
                 className={

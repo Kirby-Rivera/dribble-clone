@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { VECTOR_ASSETS } from "../../../assets/vector-assets";
+import { VECTOR_ASSETS } from "assets/vector-assets";
 import useGalleryScroll from "./useGalleryScroll";
 import styles from "./Gallery.module.scss";
 
