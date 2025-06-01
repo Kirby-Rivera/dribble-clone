@@ -1,23 +1,12 @@
 import Lists from "./FooterList";
 import styles from "./Footer.module.scss";
+import { FOOTER_DATA } from "./footer-data";
 
 const FooterLower = () => {
-  const date = new Date().getFullYear();
-
-  const legal = [`© ${date} Dribbble`, "Terms", "Privacy", "Cookies"];
-  const tags = [
-    "Jobs",
-    "Designers",
-    "Freelancers",
-    "Tags",
-    "Places",
-    "Resources",
-  ];
-
   return (
     <div className={styles["footer-lower"]}>
-      <Lists list={legal} />
-      <Lists list={tags} />
+      <Lists list={FOOTER_DATA.legal} />
+      <Lists list={FOOTER_DATA.tags} />
     </div>
   );
 };

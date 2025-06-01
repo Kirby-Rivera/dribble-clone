@@ -7,7 +7,7 @@ const CarouselContainer = () => {
     <div className={styles["carousel-container"]}>
       <div className={styles["carousel-list"]}>
         {carouselItems.map((item, index) => {
-          return <CarouselItem key={index} props={{ ...item }} />;
+          return <CarouselItem key={index} {...item } />;
         })}
       </div>
     </div>

@@ -1,28 +1,12 @@
 import styles from "./Footer.module.scss";
+import { FOOTER_DATA } from "./footer-data";
 
 const FooterUpper = () => {
-  const links = [
-    "For Designers",
-    "Hire Talent",
-    "Inspiration",
-    "Advertising",
-    "Blog",
-    "About",
-    "Careers",
-    "Support",
-  ];
-  const socials = [
-    "assets/twitter.svg",
-    "assets/fb.svg",
-    "assets/ig.svg",
-    "assets/pinterest.svg",
-  ];
-
   return (
     <div className={styles["footer-upper"]}>
       <img className={styles["main-svg"]} src="assets/dribbble.svg" alt="" />
       <div className={styles["links"]}>
-        {links.map((item, index) => {
+        {FOOTER_DATA.links.map((item, index) => {
           return (
             <a key={index} href="blank">
               {item}
@@ -31,7 +15,7 @@ const FooterUpper = () => {
         })}
       </div>
       <div className={styles["socials"]}>
-        {socials.map((item, index) => {
+        {FOOTER_DATA.socials.map((item, index) => {
           return <img key={index} className="social" src={item} alt="test" />;
         })}
       </div>
