@@ -1,7 +1,7 @@
-import Home from "modules/home/Home";
+import Landing from "modules/home/Home";
 
-const index = () => {
-  return <Home />;
-};
+function Home() {
+  return <Landing />;
+}
 
-export default index;
+export default Home;
